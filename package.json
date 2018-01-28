@@ -11,11 +11,28 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "standard --verbose && react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "prettier": "1.10.2",
+    "husky": "^0.15.0-rc.3",
     "standard": "^10.0.3"
-  }
+  },
+  "standard": {
+    "global": [
+      "it"
+    ],
+    "ignore": [
+      "package.json"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "//": [
+    "'it' is set as a global for standardJS to avoid no-undef errors across any and all test files, as opposed to repeated global declarations in each file",
+    "strange behaviour occurs with standardJS and VSCode when examining the working tree of package.json, so the file is ignored"
+  ]
 }
