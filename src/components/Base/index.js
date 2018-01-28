@@ -5,7 +5,6 @@ import Header from './header'
 import Footer from './footer'
 
 const Base = ({ children }) => {
-  console.log(children)
   return (
     <div>
       <Header />

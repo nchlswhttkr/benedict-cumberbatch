@@ -1,9 +1,14 @@
 import React from 'react'
 
+import syllables from './syllables.json'
+
 const Persona = ({ match }) => {
-  console.log('hello')
+  const { params: { id } } = match
   return (
-    <h1>{`Persona #${match.params.id}`}</h1>
+    <div>
+      <h1>{`${syllables.first[id[0]]}${syllables.second[id[1]]} ${syllables.third[id[2]]}${syllables.fourth[3]}`}</h1>
+      <h2>{`Persona #${match.params.id}`}</h2>
+    </div>
   )
 }
 
