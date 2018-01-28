@@ -6,7 +6,7 @@ import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 
 render(
-  <BrowserRouter basename='/benedict/'>
+  <BrowserRouter basename='/benedict-cumberbatch/'>
     <App />
   </BrowserRouter>,
   document.getElementById('root')
