@@ -10,6 +10,13 @@ const Persona = ({ match }) => {
       <h1 style={{ margin: '0' }}>{`${syllables.first[id[0]]}${syllables.second[id[1]]} ${syllables.third[id[2]]}${syllables.fourth[3]}`}</h1>
       <h2>{`Persona #${match.params.id}`}</h2>
       <Face />
+      <h2>Share your Benedict with the world!</h2>
+      <a
+        class='twitter-share-button'
+        href='https://twitter.com/intent/tweet'
+      >
+        Tweet
+      </a>
     </div>
   )
 }
