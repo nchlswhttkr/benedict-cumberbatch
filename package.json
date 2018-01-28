@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -10,6 +11,8 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "standard --verbose && react-scripts test --env=jsdom",
@@ -33,6 +36,7 @@
       "pre-commit": "npm test"
     }
   },
+  "homepage": "https://nickeloz.github.io/benedict-cumberbatch",
   "//": [
     "'it' is set as a global for standardJS to avoid no-undef errors across any and all test files, as opposed to repeated global declarations in each file",
     "strange behaviour occurs with standardJS and VSCode when examining the working tree of package.json, so the file is ignored"
