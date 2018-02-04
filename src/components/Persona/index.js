@@ -13,7 +13,7 @@ const Persona = ({ match }) => {
       <h2>Share your Benedict with the world!</h2>
       {/* <a
         className='twitter-share-button'
-        href='https://twitter.com/intent/tweet'
+        href='https://twitter.com/intent/tweet?text=I just created my very own Benedict Cmuberbatch! Create yours at https://nickeloz.github.io/benedict-cumberbatch'
       >
         Tweet
       </a> */}

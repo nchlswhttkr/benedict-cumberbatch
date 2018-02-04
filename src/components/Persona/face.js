@@ -18,7 +18,7 @@ const Face = ({ id }) => {
       }}
     >
       <img
-        src={`${images}/${id[0]}.jpg`}
+        src={`${images}/eyes/${id[0]}.jpg`}
         alt='Left Eye'
         style={{
           position: 'absolute',
@@ -29,7 +29,7 @@ const Face = ({ id }) => {
         }}
       />
       <img
-        src={`${images}/${id[1]}.jpg`}
+        src={`${images}/eyes/${id[1]}.jpg`}
         alt='Right Eye'
         style={{
           position: 'absolute',
@@ -40,7 +40,7 @@ const Face = ({ id }) => {
         }}
       />
       <img
-        src={`${images}/${id[2] % 5}.jpg`}
+        src={`${images}/mouth/${id[2] % 5}.jpg`}
         alt='Mouth'
         style={{
           position: 'absolute',
