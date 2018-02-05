@@ -25,7 +25,9 @@ const Face = ({ id }) => {
           left: '70px',
           top: '160px',
           height: '45px',
-          border: '2px solid rgba(127,127,127,0.5)'
+          border: '2px solid rgba(127,127,127,0.5)',
+          backgroundColor: 'rgba(127,127,127,0.5)',
+          color: '#ffffff'
         }}
       />
       <img
@@ -36,7 +38,9 @@ const Face = ({ id }) => {
           left: '160px',
           top: '160px',
           height: '45px',
-          border: '2px solid rgba(127,127,127,0.5)'
+          border: '2px solid rgba(127,127,127,0.5)',
+          backgroundColor: 'rgba(127,127,127,0.5)',
+          color: '#ffffff'
         }}
       />
       <img
@@ -47,7 +51,9 @@ const Face = ({ id }) => {
           left: '80px',
           top: '230px',
           height: '100px',
-          border: '2px solid rgba(127,127,127,0.5)'
+          border: '2px solid rgba(127,127,127,0.5)',
+          backgroundColor: 'rgba(127,127,127,0.5)',
+          color: '#ffffff'
         }}
       />
     </div>
