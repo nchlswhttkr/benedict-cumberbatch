@@ -33,5 +33,17 @@
   "//": [
     "'it' is set as a global for standardJS to avoid no-undef errors across any and all test files, as opposed to repeated global declarations in each file",
     "strange behaviour occurs with standardJS and VSCode when examining the working tree of package.json, so the file is ignored"
-  ]
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
